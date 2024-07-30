@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/images/ToDo List.png">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav-bar"><h1>Registration Form</h1></nav>
+      <div class="header-text">
+        <h1>Student Registration System</h1>
+        <div class="header-intro">
+          This is Student Registration Form where you can add new student
+          records, edit the existing records, delete records and after
+          refreshing or closing the page data should not disappear. All input fields are
+          mandatory.
+        </div>
+      </div>
+    </header>
+
+    <!-- Header -->
+    <!-- container -->
+    <section class="container">
+      <!-- Form -->
+      <form class="form" method="POST" id="myForm">
+        <h3>Registration form</h3>
+        <div>
+          <sup>*</sup>
+          <input
+            class="input"
+            name="Name"
+            type="text"
+            id="name"
+            placeholder="Student name"
+            required
+          />
+        </div>
+        <div>
+          <sup>*</sup>
+          <input
+            class="input"
+            name="Student ID"
+            type="number"
+            id="ID"
+            placeholder="Student ID"
+            required
+          />
+        </div>
+        <div>
+          <sup>*</sup>
+          <input
+            class="input"
+            name="Email"
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div>
+          <sup>*</sup>
+          <input
+            class="input"
+            name="Contact No"
+            type="number"
+            id="Contact No"
+            placeholder="Contact No"
+            required
+          />
+        </div>
+        <div>
+          <sup>*</sup>
+          <input
+            class="input"
+            name="Class"
+            type="number"
+            id="Class"
+            placeholder="Class"
+            required
+          />
+        </div>
+        <button class="button" id="AddButton" type="submit">ADD</button>
+      </form>
+      <!-- Form -->
+      <div class="students">
+        <div class="list-head-div">
+          <ul>
+            <li class="listHead">
+              <div>Name</div>
+              <div>Student ID</div>
+              <div>Email</div>
+              <div>Contact No</div>
+              <div>Class</div>
+              <div>Edit</div>
+              <div>Delete</div>
+            </li>
+          </ul>
+        </div>
+        <div class="list" id="list">
+          <ul id="listContainer"></ul>
+        </div>
+      </div>
+    </section>
+    <!-- container -->
+
+    <!-- Footer -->
+     <footer class="footer">
+      <span style="color: white;">Copyright &copy; 2024 sateesh kumar goud</span>
+     </footer>
+    <!-- Footer -->
+  </body>
+</html>
